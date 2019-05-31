@@ -70,6 +70,11 @@ const nodes = [
         html_close: "</ol>"
     },
     {
+        tag: "*",
+        html_open: "<li>",
+        html_close: ""
+    },
+    {
         tag: "img",
         html_open: attr => `<img src="${attr || "#"}" alt="${attr || "#"}" />`,
         html_close: ""
