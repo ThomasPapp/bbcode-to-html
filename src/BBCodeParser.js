@@ -29,7 +29,7 @@ function parse(str) {
         }
     });
 
-    return html;
+    return html.replace(/(?:\r\n|\r|\n)/g, "</br>");
 }
 
 module.exports = parse;
