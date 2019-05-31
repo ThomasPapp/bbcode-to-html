@@ -16,7 +16,6 @@ function parse(str) {
     let attr;
     let open;
     tags.forEach(tag => {
-        console.log(tag.slice(1, -1));
         args = tag.slice(1, -1).split("=");
         closing = args[0].startsWith("/");
         name = closing ? args[0].slice(1) : args[0];
