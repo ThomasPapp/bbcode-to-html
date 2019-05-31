@@ -9,6 +9,9 @@ function parse(str) {
 
     const tags = str.match(/(\[[^\]^\s]{1,}\])/g);
 
+    if (!tags || tags.length < 1)
+        return html;
+
     let args;
     let closing;
     let name;
